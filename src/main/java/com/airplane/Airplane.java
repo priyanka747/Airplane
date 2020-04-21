@@ -70,7 +70,7 @@ public class Airplane{
 
     @Override
     public String toString() {
-        return "Airplane{altitude = " + altitude+"}";
+        return "Airplane{altitude = " + altitude+" motor "+isMotorState()+"}";
     }
    
 }
