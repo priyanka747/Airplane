@@ -33,12 +33,18 @@ public class Main {
                     if (!airplane.isMotorState()) {
                         airplane.setMotorState(!airplane.isMotorState());
                         System.out.println("plane start with altitude 0");
+                    }else{
+                        System.out.println("plane already started " + airplane.toString());
                     }
                     break;
                 case 2:
                     if (airplane.isMotorState()) {
+                        if(airplane.getAltitude()==0){
                         airplane.setMotorState(!airplane.isMotorState());
                         System.out.println("plane stopped");
+                        }else{
+                            System.out.println("land plane first to stop " + airplane.toString());
+                        }
                     }
                     break;
                 case 3:
